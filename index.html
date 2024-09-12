@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Fare Cab Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-box">
+            <h2 class="header-title">BOOK AIRPORT CAB</h2> 
+            <form class="booking-form">
+                 <h2 class="header-title">BOOK AIRPORT CAB</h2> 
+                <div class="ride-type">
+                    <button type="button" class="ride-option active">Airport Ride</button>
+                    <button type="button" class="ride-option">City rental</button>
+                    <button type="button" class="ride-option">Outstation</button>
+                    <button type="button" class="ride-option">Package</button>
+                </div>
+                <div class="location-section">
+                    <label for="from-location">From:</label>
+                    <select id="from-location">
+                        <option value="new-delhi">New Delhi</option>
+                    </select>
+
+                    <label for="to-location">To:</label>
+                    <select id="to-location">
+                        <option value="igi-airport">IGI Airport</option>
+                    </select>
+                </div>
+
+                <div class="schedule-section">
+                    <label for="date">Schedule Your Ride</label>
+                    <input type="date" id="date">
+                    <input type="time" id="time">
+                </div>
+
+                <div class="fare-section">
+                    <h3>Fare (Select your bucket)</h3>
+                    <div>
+                    <ul class="fare-list">
+                        <li>0-10 KM: ₹499</li>
+                        <li>11-15 KM: ₹599</li>
+                        <li>15-20 KM: ₹699</li>
+                        <li>21-25 KM: ₹799</li>
+                        <li>26-30 KM: ₹899</li>
+                        <li>31-35 KM: ₹999</li>
+                        <li>35-40 KM: ₹1099</li>
+                        <li>41-45 KM: ₹1199</li>
+                    </ul>
+                </div>
+              </div>
+
+                <div class="terms-section">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">Agree to these <a href="#">Terms and Conditions</a></label>
+                </div>
+
+                <button type="submit" class="submit-button">Pay and update Location</button>
+            </form>
+        </div>
+
+        <div class="right-box">
+         <h2 class="header-title">Calculate Distance</h2>  
+            
+            <div class="distance-section">
+             <h2 class="header-title">Calculate Distance</h2> 
+                
+                <div class="input-group">
+                    <input type="text" id="pickup-location" placeholder="Enter Pickup Location (Min 7 Character)">
+                    <button class="clear-btn">&times;</button>
+                </div>
+                
+                <div class="reverse-icon">
+                    &#x21C4;
+                </div>
+                <div class="input-group">
+                    <input type="text" id="to-location" value="Delhi - IGI Airport-T3">
+                    <button class="clear-btn">&times;</button>
+                </div>
+
+                <p>Distance: <span id="distance">33 KM</span></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html> 
+
+
+
+
